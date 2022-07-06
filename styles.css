@@ -445,6 +445,74 @@ body {
     margin: 0;
   }
 }
+.payment {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 10px 50px;
+  display: none;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.payTitle {
+  font-size: 20px;
+  color: gray;
+}
+label {
+  font-size: 14px;
+  font-weight: 300;
+}
+.payInput {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.payInput::placeholder {
+  color: rgb(163, 163, 163);
+}
+.cardIcons {
+  display: flex;
+}
+.cardIcon {
+  margin-right: 10px;
+}
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.sm {
+  width: 30%;
+}
+.payButton {
+  position: absolute;
+  height: 40px;
+  bottom: -40px;
+  width: 100%;
+  left: 0;
+  background-color: #369e62;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+}
+.close {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #369e62;
+  cursor: pointer;
+}
 @media (max-width: 500px) {
   html {
     font-size: 50%;
